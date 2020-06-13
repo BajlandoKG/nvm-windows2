@@ -35,3 +35,11 @@ jobs:
 
     - name: Test
       run: go test -v .
+
+- nazwa: środowisko Setup Go
+  używa: akcji/setup-go@v2.0.3
+  z:
+    # Wersja Go do pobrania (w razie potrzeby) i użycia. Obsługuje specyfikację i zakresy semver.
+    wersja go: # opcjonalna
+    # Czy pobierać tylko stabilne wersje
+    stable: # opcjonalne, domyślnie true
